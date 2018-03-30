@@ -1,14 +1,14 @@
 import UIKit
 
 class {{ module_info.name }}ViewController: UIViewController {
-    var presenter: {{ module_info.name }}Presenter?
+  var presenter: {{ module_info.name }}Presenter?
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.presenter?.viewDidLoad()
-    }
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    self.presenter?.viewDidLoad()
+  }
 
-    override func viewWillAppear(_ animated: Bool) {
-        self.presenter?.viewWillAppear()
-    }
+  override func viewWillAppear(_ animated: Bool) {
+    self.presenter?.viewWillAppear()
+  }
 }
